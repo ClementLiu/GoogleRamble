@@ -1,0 +1,27 @@
+{
+  "name": "GoogleRambling",
+  "manifest_version": 2,
+  "version": "1.0",
+  "permissions": [
+          "history"
+        ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jQuery-Core-3.3.1.min.js",
+        "content.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
